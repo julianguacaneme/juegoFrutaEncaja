@@ -1,11 +1,25 @@
 //Que fruta encaja?
 
-let frutas = ['manzana', 'uva', 'sandia', 'naranja', 'banana']
+//let frutas = [manzana.nombre, uva.nombre, sandia.nombre, naranja.nombre, banana.nombre]
 
+//constructor de la clase fruta
+let frutas = [];
+
+class Fruta {
+    constructor(nombre, ilustracion) {
+        (this.nombre = nombre), (this.ilustracion = ilustracion);
+    }
+}
+
+let manzana = new Fruta("manzana", "./assets/manzana.jpg");
+let uva = new Fruta("uva", "./assets/manzana.jpg");
+
+frutas.push(manzana, uva);
+console.log(frutas[0]);
 
 //El pc escoje una fruta
 let frutaPc;
-let resultado
+let resultado;
 
 //Crear numero aleatorio
 function aleatorio(min, max) {
@@ -13,7 +27,7 @@ function aleatorio(min, max) {
 }
 
 resultado = aleatorio(1, 4);
-console.log('el numero aleatorio es: ' + resultado)
+console.log("el numero aleatorio es: " + resultado);
 
 //convertir resultado en fruta
 
@@ -27,21 +41,23 @@ function convertirResultado(resultado) {
     } else if (resultado === 4) {
         frutaPc = frutas[3];
     }
-    return frutaPc
+    return frutaPc;
 }
 
 convertirResultado(resultado);
-console.log('El PC escogió: ' + frutaPc)
+console.log("El PC escogió: " + frutaPc);
 
 //El jugador escoje la fruta que cree que encaja
 
+const contenedorTarjetas = document.getElementById("contenedor-tarjeta");
+const botonFrutaJugador = document.getElementById("boton-fruta");
 let frutaJugador = "sandia";
-console.log("El jugador escogió: " + frutaJugador)
+console.log("El jugador escogió: " + frutaJugador);
 
 //Se verifica si la fruta es la correcta
-let frutaEncaja = 'Escojiste la fruta correcta';
+let frutaEncaja = "Escojiste la fruta correcta";
 let frutaNoEncaja = "La fruta que escogiste no encaja";
-let resultadoJuego
+let resultadoJuego;
 
 function verificarJugada(valor1, valor2) {
     if (valor1 === valor2) {
@@ -53,7 +69,7 @@ function verificarJugada(valor1, valor2) {
 
 verificarJugada(frutaPc, frutaJugador);
 
-console.log(resultadoJuego)
+console.log(resultadoJuego);
 
 //Pintar el arbol en el canvas
 
