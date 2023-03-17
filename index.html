@@ -9,55 +9,27 @@
 
 <body>
 
-    <div class="titulo">
-        <h1> Qué Fruta Encaja?</h1>
-    </div>
+    <h1 class="titulo"> Qué Fruta Encaja?</h1>
 
-
-    <section id="ver-mapa">
+    <section id="arbol">
 
         <div><canvas id="lienzo" width="300" height="300" style="border:1px solid #d3d3d3;"></canvas></div>
-
-
-        <div id="contenedor-tarjeta" class="tarjetas">
-            <h2 class="subtitulo">Escoje la fruta que corresponde a la silueta en el arbol</h2>
-
-            <div id="frutas">
-                <input type="radio" name="manzana" id='mazana' />
-                <label class="tarjeta-de-fruta" for='manzana'>
-                    <img src=./assets/manzana.jpg alt='manzana' width="100" height="100">
-                </label>
-
-                <input type="radio" name="uva" id='uva' />
-                <label class="tarjeta-de-fruta" for='uva'>
-                    <img src=./assets/uva.jpeg alt='uva' width="100" height="100">
-                </label>
-
-                <input type="radio" name="sandia" id='sandia' />
-                <label class="tarjeta-de-fruta" for="sandia">
-                    <img src=./assets/sandia.png alt='sandia' width="100" height="100">
-                </label>
-
-                <input type="radio" name="banana" id='banana' />
-                <label class="tarjeta-de-fruta" for="banana">
-                    <img src=./assets/banana.jpeg alt='banana' width="100" height="100">
-                </label>
-
-                <input type="radio" name="naranja" id='naranja' />
-                <label class="tarjeta-de-fruta" for="naranja">
-                    <img src=./assets/naranja.png alt='naranja' width="100" height="100">
-                </label>
-            </div>
-
-        </div>
-
-
+    </section>
+    <section id="frutas">
+        <h2>Selecciona la fruta correcta</h2>
+        <p><button id="botonManzana">Manzana 🍎</button></p>
+        <p><button id="botonNaranja">Naranja 🍊</button></p>
+        <p><button id="botonUvas">Uvas 🍇</button></p>
+        <p><button id="botonSandia">Sandia 🍉</button></p>
+        <p><button id="botonBanana">Banana 🍌</button></p>
 
     </section>
-    <button id="boton-fruta">Continuar</button>
-
-
-
+    <section id="mensajes">
+        <p>Escogiste manzana y la silueta en el arbol era manzana - Ganaste!!</p>
+    </section>
+    <section id="reiniciar">
+        <button>reiniciar</button>
+    </section>
 
     <script src="./queFrutaEncaja.js">
     </script>

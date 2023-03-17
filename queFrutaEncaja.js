@@ -64,10 +64,53 @@ console.log("El PC escogió: " + frutaPc);
 
 //El jugador escoje la fruta que cree que encaja
 
-const contenedorTarjetas = document.getElementById("contenedor-tarjeta");
-const botonFrutaJugador = document.getElementById("boton-fruta");
-let frutaJugador = "sandia";
-console.log("El jugador escogió: " + frutaJugador);
+let frutaJugador
+
+
+function iniciarJuego() {
+    let botonManzana = document.getElementById('botonManzana')
+    botonManzana.addEventListener('click',
+        escojeManzana)
+    let botonNaranja = document.getElementById('botonNaranja')
+    botonNaranja.addEventListener('click',
+        escojeNaranja)
+    let botonUvas = document.getElementById('botonUvas')
+    botonUvas.addEventListener('click',
+        escojeUvas)
+    let botonSandia = document.getElementById('botonSandia')
+    botonSandia.addEventListener('click',
+        escojeSandia)
+    let botonBanana = document.getElementById('botonBanana')
+    botonBanana.addEventListener('click',
+        escojeBanana)
+    verificarJugada(frutaPc, frutaJugador);
+}
+
+function escojeManzana() {
+    frutaJugador = "Manzana"
+    alert(frutaJugador)
+}
+
+function escojeNaranja() {
+    frutaJugador = "Naranja"
+    alert(frutaJugador)
+}
+
+function escojeUvas() {
+    frutaJugador = "Uvas"
+    alert(frutaJugador)
+}
+
+function escojeSandia() {
+    frutaJugador = "Sandia"
+    alert(frutaJugador)
+}
+
+function escojeBanana() {
+    frutaJugador = "Banana"
+    alert(frutaJugador)
+}
+
 
 //Se verifica si la fruta es la correcta
 let frutaEncaja = "Escojiste la fruta correcta";
@@ -82,6 +125,8 @@ function verificarJugada(valor1, valor2) {
     }
 }
 
-verificarJugada(frutaPc, frutaJugador);
+
 
 console.log(resultadoJuego);
+
+window.addEventListener('load', iniciarJuego)
