@@ -1,7 +1,3 @@
-//Que fruta encaja?
-
-//let frutas = [manzana.nombre, uva.nombre, sandia.nombre, naranja.nombre, banana.nombre]
-
 //constructor de la clase fruta
 let frutas = [];
 

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand:wght@300;500;700&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #3D8361;
+}
+
+.titulo {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-size: 36px;
+}
+
+.subtitulo {
+    color: white;
+    font-size: 20px;
+}
+
+h1 {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+h2 {
+    display: flex;
+}
+
+#ver-mapa {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 40px;
+}
+
+#contenedor-tarjeta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#frutas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 40px;
+}
+
+.tarjeta-de-fruta img {
+    width: 100px;
+    height: 100px;
+    padding: 3px;
+    box-sizing: border-box;
+    margin: 4px;
+    border: 1px solid white;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    display: none;
+}
